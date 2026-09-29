@@ -3,27 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f4ee">
-  <title>카페 주문 연습</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#f8f7f3">
+  <title>Knollab 001 · C 실험</title>
+  <link rel="stylesheet" href="explorer.css">
+  <script src="explorer.js" defer></script>
 </head>
 <body>
-  <div class="site-shell">
-    <header class="site-header" aria-label="카페 주문 연습">
-      <div class="brand" aria-label="카페 주문 연습">
-        <span class="brand-mark" aria-hidden="true"><span></span></span>
-        <span>카페 주문 연습</span>
+  <div class="explorer">
+    <a class="skip-link" href="#experience">체험 화면으로 건너뛰기</a>
+    <header class="toolbar">
+      <div class="heading-row">
+        <div class="identity">
+          <span class="identity-mark" aria-hidden="true">K<span>·</span></span>
+          <div>
+            <p class="eyebrow">INTERACTIVE EXPERIMENT ARCHIVE <span>·</span> 001</p>
+            <h1>카페 주문 연습 <span class="heading-divider">/</span> <span class="heading-subtitle">실험별 체험</span></h1>
+          </div>
+        </div>
+        <span class="current-badge"><span class="badge-dot" aria-hidden="true"></span> C · Figma MCP</span>
       </div>
-      <span class="header-note">한 단계씩 주문해요</span>
+      <div class="controls">
+        <nav class="control-group experiment-group" aria-label="실험 선택">
+          <span class="control-label" aria-hidden="true">실험</span>
+          <div class="control-options">
+            <a class="control-option" data-experiment="a" aria-label="A 실험 · AI Only" href="https://luckybridge.github.io/knollab-001-a-ai-only/?version=3"><span class="option-index">A</span><span class="option-name">AI Only</span></a>
+            <a class="control-option" data-experiment="b" aria-label="B 실험 · Design.md" href="https://luckybridge.github.io/knollab-001-b-design-md/?version=3"><span class="option-index">B</span><span class="option-name">Design.md</span></a>
+            <a class="control-option is-active" data-experiment="c" aria-label="C 실험 · Figma MCP" href="?version=3" aria-current="page"><span class="option-index">C</span><span class="option-name">Figma MCP</span></a>
+            <a class="control-option" data-experiment="d" aria-label="D 실험 · Figma MCP Active, 버전 1만 제공" href="https://luckybridge.github.io/knollab-001-d-design-figma-mcp-actively/?version=1"><span class="option-index">D</span><span class="option-name">Figma MCP Active</span></a>
+          </div>
+        </nav>
+        <nav class="control-group version-group" aria-label="버전 선택">
+          <span class="control-label" aria-hidden="true">버전</span>
+          <div class="control-options">
+            <a class="control-option" data-version="1" href="?version=1">V1</a>
+            <a class="control-option" data-version="2" href="?version=2">V2</a>
+            <a class="control-option" data-version="3" href="?version=3">V3</a>
+          </div>
+        </nav>
+      </div>
+      <div class="context-row">
+        <p><span class="context-marker" aria-hidden="true"></span><strong id="context-title">C 실험 · 버전 3</strong><span class="context-separator" aria-hidden="true">—</span>원본 화면에서 직접 체험해 보세요</p>
+        <a id="open-original" class="open-original" href="versions/v3/index.html" target="_blank" rel="noopener">원본 화면 열기 <span aria-hidden="true">↗</span></a>
+      </div>
     </header>
-
-    <main id="app" class="app" aria-live="off"></main>
-    <div id="live-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+    <main id="experience" class="experience" aria-label="선택한 버전의 체험 화면">
+      <iframe id="experience-frame" title="C 실험 버전 3 카페 주문 체험" src="versions/v3/index.html" loading="eager" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe>
+    </main>
   </div>
-
-  <noscript>
-    <div class="noscript">이 연습 사이트를 사용하려면 자바스크립트를 켜 주세요.</div>
-  </noscript>
-  <script src="script.js"></script>
 </body>
 </html>
